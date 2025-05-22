@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "skillpoint.snackable.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ItemSettingsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
