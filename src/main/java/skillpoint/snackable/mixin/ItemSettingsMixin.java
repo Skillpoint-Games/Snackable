@@ -21,7 +21,7 @@ public class ItemSettingsMixin {
 
         // copy consumable component replacing consume time
         localRef.set(new ConsumableComponent(
-                timeOverride,
+                foodComponent.canAlwaysEat() ? consumableComponent.consumeSeconds() : timeOverride,
                 consumableComponent.useAction(),
                 consumableComponent.sound(),
                 consumableComponent.hasConsumeParticles(),
